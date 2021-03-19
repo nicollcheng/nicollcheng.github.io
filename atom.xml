@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>帆小亦能远航</title>
+  
+  <subtitle>愚者不学无术，智者不耻下问</subtitle>
+  <link href="https://nicollcheng.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://nicollcheng.github.io/"/>
+  <updated>2021-03-07T12:06:01.745Z</updated>
+  <id>https://nicollcheng.github.io/</id>
+  
+  <author>
+    <name>nicollcheng</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo部署没有推送到GitHub中解决办法</title>
+    <link href="https://nicollcheng.github.io/2021/03/03/Hexo%E9%83%A8%E7%BD%B2%E6%B2%A1%E6%9C%89%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E4%B8%AD%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://nicollcheng.github.io/2021/03/03/Hexo%E9%83%A8%E7%BD%B2%E6%B2%A1%E6%9C%89%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E4%B8%AD%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
+    <published>2021-03-03T09:05:35.000Z</published>
+    <updated>2021-03-07T12:06:01.745Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;问题描述&quot;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;当我们编写完文章后，使用&lt;code&gt;hexo d&lt;/code&gt;部署博客时，没有发生任何错误信息：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/03/03/Hexo%E9%83%A8%E7%BD%B2%E6%B2%A1%E6%9C%89%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E4%B8%AD%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/image-20210303170857478.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后我们去GitHub仓库中却发现新的文章并没有提交到Github仓库中&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://nicollcheng.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://nicollcheng.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot+Lettuce监听RedisCluster集群环境下的键值事件</title>
+    <link href="https://nicollcheng.github.io/2021/03/03/SpringBoot+Lettuce%E7%9B%91%E5%90%ACRedisCluster%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%94%AE%E5%80%BC%E4%BA%8B%E4%BB%B6/"/>
+    <id>https://nicollcheng.github.io/2021/03/03/SpringBoot+Lettuce%E7%9B%91%E5%90%ACRedisCluster%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E9%94%AE%E5%80%BC%E4%BA%8B%E4%BB%B6/</id>
+    <published>2021-03-03T03:20:26.000Z</published>
+    <updated>2021-03-19T12:05:18.249Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;修改redis配置文件&quot;&gt;修改Redis配置文件&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;redis.conf&lt;/code&gt;配置文件修改位置如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 注释掉bind 127.0.0.1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#bind 127.0.0.1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 设置后台运行&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;daemonize yes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 设置外网可访问&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;protected-mode no&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 设置授权密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;requirepass 123456&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 开启cluster&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cluster-enabled yes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 设置cluster配置文件名称&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cluster-config-file nodes.conf&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 设置Cluster节点超时时间&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cluster-node-timeout 2000&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 开启Redis AOF持久化&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;appendonly yes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 设置AOF持久化文件名&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;appendfilename appendonly.aof&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 设置DUMP文件名&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;dbfilename dump.rdb&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 设置Redis日志文件名&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;logfile redis.log&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 开启缓存的键空间通知事件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;notify-keyspace-events EA&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Redis Cluster" scheme="https://nicollcheng.github.io/categories/Redis-Cluster/"/>
+    
+    
+    <category term="SpringBoot" scheme="https://nicollcheng.github.io/tags/SpringBoot/"/>
+    
+    <category term="Redis Cluster" scheme="https://nicollcheng.github.io/tags/Redis-Cluster/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL主从搭建</title>
+    <link href="https://nicollcheng.github.io/2021/02/08/MySQL%E4%B8%BB%E4%BB%8E%E6%90%AD%E5%BB%BA/"/>
+    <id>https://nicollcheng.github.io/2021/02/08/MySQL%E4%B8%BB%E4%BB%8E%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-02-08T05:40:03.000Z</published>
+    <updated>2021-03-03T07:15:13.156Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;mysql主从同步搭建&quot;&gt;MySQL主从同步搭建&lt;/h1&gt;
+&lt;h2 id=&quot;环境&quot;&gt;环境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;docker&lt;/li&gt;
+&lt;li&gt;docker-compose&lt;/li&gt;
+&lt;li&gt;mysql:5.7.28&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;主库搭建&quot;&gt;主库搭建&lt;/h2&gt;
+&lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;&lt;p&gt;创建并进入MySQL文件夹&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir /usr/&lt;span class=&quot;built_in&quot;&gt;local&lt;/span&gt;/mysql-master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /usr/&lt;span class=&quot;built_in&quot;&gt;local&lt;/span&gt;/mysql-master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="MySQL" scheme="https://nicollcheng.github.io/categories/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="https://nicollcheng.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vagrant+virtual-box搭建虚拟机</title>
+    <link href="https://nicollcheng.github.io/2021/02/08/vagrant-virtual-box%E6%90%AD%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>https://nicollcheng.github.io/2021/02/08/vagrant-virtual-box%E6%90%AD%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
+    <published>2021-02-08T05:20:09.000Z</published>
+    <updated>2021-03-03T07:15:13.160Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;环境准备&quot;&gt;环境准备&lt;/h2&gt;
+&lt;h3 id=&quot;下载安装vagrant&quot;&gt;下载安装Vagrant&lt;/h3&gt;
+&lt;p&gt;下载地址：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.msi&quot;&gt;Window&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.deb&quot;&gt;Debian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.rpm&quot;&gt;Centos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_linux_amd64.zip&quot;&gt;Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.dmg&quot;&gt;macOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;下载安装virtual-box&quot;&gt;下载安装Virtual Box&lt;/h3&gt;
+&lt;p&gt;下载地址：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://download.virtualbox.org/virtualbox/6.1.4/VirtualBox-6.1.4-136177-Win.exe&quot;&gt;Window&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://download.virtualbox.org/virtualbox/6.1.4/VirtualBox-6.1.4-136177-OSX.dmg&quot;&gt;macOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="虚拟机" scheme="https://nicollcheng.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+    
+    <category term="虚拟机" scheme="https://nicollcheng.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+    <category term="vagrant" scheme="https://nicollcheng.github.io/tags/vagrant/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker系列安装</title>
+    <link href="https://nicollcheng.github.io/2021/02/08/Docker%E7%B3%BB%E5%88%97%E5%AE%89%E8%A3%85/"/>
+    <id>https://nicollcheng.github.io/2021/02/08/Docker%E7%B3%BB%E5%88%97%E5%AE%89%E8%A3%85/</id>
+    <published>2021-02-08T05:15:51.000Z</published>
+    <updated>2021-03-03T07:15:13.155Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;卸载之前的docker&quot;&gt;卸载之前的docker&lt;/h3&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo yum remove docker \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                  docker-client \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                  docker-client-latest \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                  docker-common \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                  docker-latest \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                  docker-latest-logrotate \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                  docker-logrotate \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                  docker-engine&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;安装必要依赖&quot;&gt;安装必要依赖&lt;/h3&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo yum install -y yum-utils \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    device-mapper-persistent-data \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    lvm2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Docker" scheme="https://nicollcheng.github.io/categories/Docker/"/>
+    
+    
+    <category term="Docker" scheme="https://nicollcheng.github.io/tags/Docker/"/>
+    
+    <category term="Linux" scheme="https://nicollcheng.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+</feed>
